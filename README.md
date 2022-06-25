@@ -51,3 +51,9 @@ so you really need to be patient after each commit
 
 which is also discussed in the thread
 
+Waiting was just too hard
+
+I have gone back to hard coding the absolute link
+
+and just test each page locally
+
