@@ -45,5 +45,9 @@ error
 
 GitHub pages just needs some time to update to modifications 
 
+this seems to be the case with any modification to the repo
+
+so you really need to be patient after each commit
+
 which is also discussed in the thread
 
