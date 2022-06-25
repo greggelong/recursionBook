@@ -21,4 +21,4 @@ and deploying at the same time I will use the whole path name.
 
 however you must be careful as you will be viewing the deployed page linked in the index even when you are using your local host 
 
-so 
+so go live on each page 
