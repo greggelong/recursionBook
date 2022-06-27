@@ -61,21 +61,41 @@ and just test each page locally
 ## chapter 1
 
 1. In general, what is a recursive thing?
+    
+    - is a thing whose definition includes itself (not a tautology)
 
 2. In programming, what is a recursive function?
+    
+    - a function that calls itself
 
 3. What four features do functions have?
+    
+    - code that runs when called
+
+    - arguments that are passed (can be zero)
+
+    - return value (can be null)
+
+    - program stack remembers where it was called from
 
 4. What is a stack?
 
+    - LIFO data structure and and can be execution call stack
+
 5. What are the terms for adding and removing values to the top of a
 stack?
+
+    - push(), pop()
 
 6. Say you push the letter J to a stack, then push the letter Q, then pop the
 stack, then push the letter K, then pop the stack again. What does the
 stack look like?
 
+    - JK
+
 7. What is pushed and popped onto the call stack?
+
+  - frames
 
 8. What causes a stack overflow to happen?
 
