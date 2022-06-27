@@ -99,13 +99,25 @@ stack look like?
 
 8. What causes a stack overflow to happen?
 
+    - too many function calls without return, using up stack memory
+
 9. What is a base case?
+
+    - a case where the function stops calling itself
 
 10. What is a recursive case?
 
+    - a case in which the function calls itself
+
 11. How many base cases and recursive cases do recursive functions have?
+
+    - at least one of each, to be recursive and not cause an overflow.
 
 12. What happens if a recursive function has zero base cases?
 
+    - stack overflow
+
 13. What happens if a recursive function has zero recursive cases?
+
+    - it is not recursive
 
