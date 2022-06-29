@@ -5,8 +5,9 @@ wn.colormode(255)
 wn.screensize(800,800)
 
 greg = turtle.Turtle()
+wn.tracer(0,0) ## turns animation off
 wn.bgcolor((0,0,0))
-wn.tracer(False) ## turns animation off
+
 greg.hideturtle() ## need to do this for tracer animation off
 greg.speed(0)
 greg.color("green")
@@ -42,4 +43,5 @@ def snowflake(t,order,size):
 
 snowflake(greg,2,400)
 
+wn.update()
 wn.exitonclick()
