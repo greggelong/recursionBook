@@ -121,3 +121,39 @@ stack look like?
 
     - it is not recursive
 
+## The turtle as a data structure
+
+This review of the call stack and recursion has highlighted how a turtle
+
+acts as a very helpful data structure.  
+
+I have added a version of koch in python using the turtle
+
+the koch function is really simple as the 
+
+turtle is keeping track of its heading and position in each frame.
+
+This version shows python turtle.  but I have another version
+
+with a homemade turtle in processing and p5.js:
+
+https://github.com/greggelong/truf
+
+It is possible to make the koch curve with some graphic primitives and rotation
+
+I have a version here: https://github.com/greggelong/koch-recursive
+
+the only problem is keeping track of where each position and heading 
+
+(which is created by rotating the canvas not the graphic object itself)
+
+
+## python turtle no animation
+
+python```
+turtle.tracer(0,0)  # wn.tracer if you have set up a window
+
+turtle.update()   # if you don't use this it will not finish the plot
+
+
+```
