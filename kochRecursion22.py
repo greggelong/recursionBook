@@ -41,7 +41,7 @@ def snowflake(t,order,size):
 
 #koch(greg,3,600)
 
-snowflake(greg,2,400)
+snowflake(greg,4,400)
 
 wn.update()
 wn.exitonclick()
