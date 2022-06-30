@@ -3,10 +3,21 @@ let greg;  //variable to hold gurtle
 function setup() {
   createCanvas(600, 600);
   angleMode(DEGREES);
-  greg = new Gurtle(width/4,height/4,color(255,0,0));
+  greg = new Gurtle(width/4,height/4,color(255,191,0));
 
   background(0);
   snowflake(greg,4,300)
+  //frameRate(10)
+}
+
+function draw(){
+  background(0);
+  greg.angle=0;
+  let lev = abs(floor(sin(frameCount)*4));
+  textSize(20)
+  fill(255,191,0);
+  text(lev,50,50)
+  snowflake(greg,lev,300);
 }
 
 function koch(t, level, size){
