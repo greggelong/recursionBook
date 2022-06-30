@@ -1,24 +1,43 @@
 let greg;  //variable to hold gurtle
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   angleMode(DEGREES);
-  greg = new Gurtle(10,height/2,color(255,0,0));
+  greg = new Gurtle(width/4,height/4,color(255,0,0));
+
+  background(0);
+  snowflake(greg,4,300)
 }
 
-function draw() {
-  background(127);
-  // can move gurtel to a particular spot
-  greg.x = random(width)
-  greg.y = random(height)
-  // can change gurtel's angle 
-  greg.angle = random(360)
-  // can change gurtle's color
-  greg.clr = color(random(255),random(255), random(255))
-  
-  sqr(greg, random(height/4))
-  
+function koch(t, level, size){
+  if (level == 0){
+    t.forward(size);
+
+  }else{
+    koch(t, level-1, size/3)   // Go 1/3 of the way
+    t.left(60)
+    koch(t, level-1, size/3)
+    t.right(120)
+    koch(t, level-1, size/3)
+    t.left(60)
+    koch(t, level-1, size/3)
+  }
+
 }
+
+// snowflake is three calls to koch
+// my left and right for koch are reversed to
+// the books, but makes a point about directions
+
+function snowflake(t, level,size){
+  koch(t,level,size);
+  t.right(120);
+  koch(t,level,size);
+  t.right(120);
+  koch(t,level,size);
+
+}
+ 
 
 
 function sqr(obj, size){
