@@ -1,23 +1,24 @@
 let greg;  //variable to hold gurtle
-
+let oscil = [0,1,2,3,4,5,5,4,3,2,1,0]; // oscillation heavy at both ends
 function setup() {
   createCanvas(600, 600);
   angleMode(DEGREES);
-  greg = new Gurtle(width/4,height/4,color(255,191,0));
+  greg = new Gurtle(width/6,height/3,color(255,191,0));
 
   background(0);
-  snowflake(greg,4,300)
-  //frameRate(10)
+  snowflake(greg,4,400)
+  frameRate(5)
 }
 
 function draw(){
   background(0);
   greg.angle=0;
-  let lev = abs(floor(sin(frameCount)*4));
+  //let lev = abs(floor(sin(frameCount)*4));
+  let lev = oscil[frameCount%oscil.length];
   textSize(20)
   fill(255,191,0);
   text(lev,50,50)
-  snowflake(greg,lev,300);
+  snowflake(greg,lev,400);
 }
 
 function koch(t, level, size){
