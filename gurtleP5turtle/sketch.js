@@ -13,7 +13,7 @@ function setup() {
 function draw(){
   background(0);
   greg.angle=0;
-  //let lev = abs(floor(sin(frameCount)*4));
+  //let lev = abs(floor(sin(frameCount)*4)); // you should first take the abs then floor it but solution below is better
   let lev = oscil[frameCount%oscil.length];
   textSize(20)
   fill(255,191,0);
