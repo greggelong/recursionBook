@@ -150,7 +150,8 @@ the only problem is keeping track of where each position and heading
 
 ## python turtle no animation
 
-python```
+```python
+
 turtle.tracer(0,0)  # wn.tracer if you have set up a window
 
 turtle.update()   # if you don't use this it will not finish the plot
